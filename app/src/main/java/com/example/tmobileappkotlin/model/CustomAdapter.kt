@@ -1,6 +1,5 @@
 package com.example.tmobileappkotlin.model
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -13,7 +12,7 @@ class CustomAdapter(): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
 //    private val TAG = CustomAdapter::class.java.simpleName // "CustomAdapter"
 
-    var dataSet: MutableList<CardY> = mutableListOf()
+    var dataSet: MutableList<CardParent> = mutableListOf()
         set(value) { // Replaces whole dataSet with value
             field = value
             notifyDataSetChanged()

@@ -23,7 +23,7 @@ class ImageVH(itemView: View): RecyclerView.ViewHolder(itemView) {
         tvDescription.setTextSize(card.description.attributes.font.size)
 
         Picasso.get().load(card.image.url).into(iv)
-        iv.getLayoutParams().width = card.image.size.width
-        iv.getLayoutParams().height = card.image.size.height
+        iv.layoutParams.width = card.image.size.width
+        iv.layoutParams.height = card.image.size.height
     }
 }

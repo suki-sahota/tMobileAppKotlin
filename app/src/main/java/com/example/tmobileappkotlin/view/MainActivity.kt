@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tmobileappkotlin.R
-import com.example.tmobileappkotlin.model.CardY
+import com.example.tmobileappkotlin.model.CardParent
 import com.example.tmobileappkotlin.model.CustomAdapter
 import com.example.tmobileappkotlin.presenter.Presenter
 import kotlinx.android.synthetic.main.activity_main.*
@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity(), IMainActivity {
         presenter.makeCall()
     }
 
-    override fun displayData(dataSet: MutableList<CardY>) {
+    override fun displayData(dataSet: MutableList<CardParent>) {
         adapter.dataSet = dataSet
         dismissProgress()
     }

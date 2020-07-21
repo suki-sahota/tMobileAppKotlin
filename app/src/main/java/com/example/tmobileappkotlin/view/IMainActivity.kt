@@ -1,6 +1,6 @@
 package com.example.tmobileappkotlin.view
 
-import com.example.tmobileappkotlin.model.CardY
+import com.example.tmobileappkotlin.model.CardParent
 
 interface IMainActivity {
     fun onBind()
@@ -9,6 +9,6 @@ interface IMainActivity {
     fun showToast(message: String)
     fun showProgress()
     fun dismissProgress()
-    fun displayData(dataSet: MutableList<CardY>)
+    fun displayData(dataSet: MutableList<CardParent>)
     fun callNetwork()
 }

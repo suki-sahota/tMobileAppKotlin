@@ -1,6 +1,6 @@
 package com.example.tmobileappkotlin.presenter
 
-import com.example.tmobileappkotlin.model.CardY
+import com.example.tmobileappkotlin.model.CardParent
 import com.example.tmobileappkotlin.model.DataModel
 import com.example.tmobileappkotlin.view.IMainActivity
 import retrofit2.Call
@@ -49,7 +49,7 @@ class Presenter {
                             view?.showToast("Sorry, there was an unexpected error.")
                         } else {
                             response.body().let {
-                                view?.displayData((it?.page?.cards) as MutableList<CardY>)
+                                view?.displayData((it?.page?.cards) as MutableList<CardParent>)
                             }
                         }
                     }
